@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int n;
+	cout<< "no. of people who want to buy subscription ";
+	cin >> n;
+	int x;
+	cout << "the cost of one subscription ";
+	cin >> x;
+	
+	if(n==1 || n==2|| n==3|| n==4|| n==5|| n==6)
+	{
+	  cout << "number of subscription required to take is: " << n << endl;  
+	  cout << "minimum total cost of subscription is: "<< n*x << endl;
+	}
+	else
+	{
+	    cout << "number of subscriptions required: " << (n/6) << endl;
+	    cout << "minimum total cost of subscription is: "<< (n/6)*x << endl;
+	}
+	return 0;
+}
