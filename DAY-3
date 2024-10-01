@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int x;
+	cout << "the total number of working hours on each day (monday to thrusday): ";
+	cin >> x;
+	int y;
+	cout << "the total number of working hours on friday: ";
+	cin >> y;
+	
+	int t_work_h = (x*4)+y;
+	cout << "total number of working hours in one week: " << t_work_h << endl;
+	
+	return 0;
+
+}
