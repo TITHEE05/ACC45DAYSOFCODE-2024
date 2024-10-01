@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+    int x; //points scored by a team
+    cin >> x;
+    if(x>=12)
+    {
+        printf("THE TEAM DOES QUALIFIES FOR THE NEXT STAGE");
+    }
+    else
+    {
+        printf("THE TEAM DOES NOT QUALIFY FOR THE NEXT STAGE");
+    }
+
+    return 0;
+}
