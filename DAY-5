@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int xa,xb,xc;
+	cout << "votes recieved by party A: ";
+	cin >> xa;
+	cout << "votes recieved by party B: ";
+	cin >> xb;	
+	cout << "votes recieved by party C: ";
+	cin >> xc;
+	
+	if(xa>50)
+	{
+	    cout << "WINNER IS PARTY A" << endl;
+	}
+	else
+	{
+	    if(xb>50)
+	    {
+	        cout << "WINNER IS PARTY B" << endl;
+	    }
+	    else
+	    {
+	        if(xc>50)
+	        {
+	            cout << "WINNER IS PARTY C" << endl;
+	        }
+	        else
+	        {
+	            cout << "NOTA" << endl;
+	        }
+	    }
+	}
+	
+	return 0;
+
+}
