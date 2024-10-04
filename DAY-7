@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int x;
+	cout << "give current time: ";
+	cin>>x;
+	//x is time when he starts doing assignment
+	if (x<10)
+	{
+	    x=x+3;
+	    if (x<=10)
+	    {
+	        printf("assignment completed");
+	    }
+	    else
+	    {
+	        printf("assignment not completed");
+	    }
+	}
+	else
+	{
+	   printf("assignment not completed"); 
+	}
+	return 0;
+
+}
