@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int p,q,r,s;
+	cout << "Company A made a profit of P lakh rupees: ";
+	cin >> p;
+	cout << "Company B made a profit of Q lakh rupees: ";
+	cin >> q;
+	cout << "Company C made a profit of R lakh rupees: ";
+	cin >> r;
+	cout << "Company D made a profit of S lakh rupees: ";
+	cin >> s;
+	
+	if(p>(q+r+s) || q>(p+r+s) || r>(p+q+s) || s>(q+r+p))
+	{
+	    cout << "monoply exists " << endl;
+	}
+	else
+	{
+	    cout << "monoply doesn't exist " << endl;
+	}
+	
+	return 0;
+}
