@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int a,b,c,d;
+	cout << "tastiness of A: ";
+	cin >> a;
+	cout << "tastiness of B: ";
+	cin >> b;
+    cout << "tastiness of C: ";
+	cin >> c;
+    cout << "tastiness of D: ";
+	cin >> d;
+	int tastiness = 0;
+	
+	if (a>b && c>d)
+	{
+	    tastiness = a+c;
+	}
+	if (a>b && d>c)
+	{
+	    tastiness = a+d;
+	}
+	if(b>a && c>d)
+	{
+	    tastiness = b+c;
+	}
+	if ( b>a && d>c)
+	{
+	    tastiness = b+d;
+	}
+	
+	cout << "maximum tastiness is : "<< tastiness << endl;
+	return 0;
+ 
+}
