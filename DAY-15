@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n,m,k;
+	cout << "candies recieved: ";
+	cin >> n;
+	cout << "number of pockets in a bag: ";
+	cin >> k;
+	cout << "number a candies a pocket can hold: ";
+	cin >> m;
+	int l;
+	l= n/(k*m);
+	cout << "the minimum number of bags needed to put every candy in the bag: " << l << endl;
+	return 0;
+
+}
