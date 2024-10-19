@@ -1,0 +1,11 @@
+#python code
+
+x = int(input("time taken to travel with bike: "))
+y = int(input("time taken to travel with car: "))
+
+if(x<y):
+    print("travel with bike it is faster")
+elif(x==y):
+    print("both take the same time tavel by any")
+else:
+    print("travel with car it is faster")
