@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n,a,b;
+	cout << "enter even number of teams: ";
+	cin >> n;
+	cout<<"enter time taken during every match: ";
+	cin >> a;
+	cout << "enter break time taekn after every round: ";
+	cin >> b;
+	
+	int result;
+	while(n<=1)
+	{
+	    if(n==1)
+	    {
+	        result = result + (a*(n/2));
+	    }
+	    else
+	    {
+	       result = result + (a*(n/2)) + b;
+	    }
+	    n = n/2;
+	}
+	cout << "time taken during the competition: " << result;
+}
