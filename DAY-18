@@ -1,6 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+void timetaken(int n, int a, int b)
+{
+    int result=0;
+    while(n>1)
+	{
+	    if(n==2)
+	    {
+	        result = result + a;
+	    }
+	    else
+	    {
+	       result = result + a + b;
+	    }
+	    n = n/2;
+	}
+	cout << "time taken during the competition: " << result;
+}
 int main() {
 	// your code goes here
 	int n,a,b;
@@ -11,18 +27,6 @@ int main() {
 	cout << "enter break time taekn after every round: ";
 	cin >> b;
 	
-	int result;
-	while(n<=1)
-	{
-	    if(n==1)
-	    {
-	        result = result + (a*(n/2));
-	    }
-	    else
-	    {
-	       result = result + (a*(n/2)) + b;
-	    }
-	    n = n/2;
-	}
-	cout << "time taken during the competition: " << result;
+	timetaken(n, a, b);
+	
 }
