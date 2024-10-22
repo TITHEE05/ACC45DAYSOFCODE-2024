@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n,x,y;
+	cout << "number of problems: ";
+	cin >> n;
+	cout << "number of max marks for each problem that can be gained: ";
+	cin >> x;
+    cout << "final number of marks required: ";
+	cin >> y;
+	
+	if(y==0)
+	cout << "yes" << endl;
+
+	if((n*x)==y)
+	cout << "yes" << endl;
+	else
+	cout << "no" << endl;
+	
+	return 0;
+}
