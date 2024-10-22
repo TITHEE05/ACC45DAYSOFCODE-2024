@@ -1,0 +1,10 @@
+#python code
+r1 = int(input("refree 1 considers ball to be in(0) or outside(1) limits? Enter: "))
+r2 = int(input("refree 2 considers ball to be in(0) or outside(1) limits? Enter: "))
+r3 = int(input("refree 3 considers ball to be in(0) or outside(1) limits? Enter: "))
+r4 = int(input("refree 4 considers ball to be in(0) or outside(1) limits? Enter: "))
+	
+if(r1==0 and r2==0 and r3==0 and r4==0):
+    print("IN")
+else:
+    print("OUT")
