@@ -1,0 +1,9 @@
+#python code
+h = int(input("health points of boss: "))
+x = int(input("health points of boss reduced on normal attack: "))
+y = int(input("health points of boss reduced on special attack: "))
+
+#we import math module to use function ceil which gives the the value of largest integer closest to n when ceil(n) is given
+import math
+l = math.ceil(1 + ( h - y ) / x)
+print("the number of attacks required is: " , l)
