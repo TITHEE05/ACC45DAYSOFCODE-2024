@@ -1,0 +1,19 @@
+N = int(input("total count of problems that appeared in the two recent contests: "))
+#initializing array
+x = [] 
+#assigning values to array
+x = [str(input("the name of the problem: ")) for i in range(0,N)]
+
+#initializing count variable to count the number of times a problem has occured
+counts = 0
+countl = 0
+for i in range (0,N):
+    if(x[i]=='LTIME108'):
+        countl = countl + 1
+    elif(x[i]=='START38'):
+        counts = counts + 1
+    else:
+        print("incorrect input")
+        
+print("number of START38 problems", counts)
+print("number of LTIME108 problems", countl)
