@@ -1,0 +1,9 @@
+# cook your dish
+n = int(input("days left till halloween: "))
+count = 0
+if(n==0):
+    print(0)
+elif(n!=0):
+    for i in range (2,n+1,7):
+        count = count + 1
+    print("the number of times the dracula can eat his favourite meal is: ",count)
