@@ -1,0 +1,15 @@
+a = int(input("tastiness of ingredient a: "))
+b = int(input("tastiness of ingredient b: "))
+c = int(input("tastiness of ingredient c: "))
+d = int(input("tastiness of ingredient d: "))
+
+if(a > b and c > d):
+    print ("maximum tastiness = " , a+c)
+elif(a > b and d > c):
+    print ("maximum tastiness = " , a+d)
+elif(b > a and c > d):
+    print ("maximum tastiness = " , b+c)
+elif(b > a and d > c):
+    print ("maximum tastiness = " , b+d)
+else:
+    print("error")
