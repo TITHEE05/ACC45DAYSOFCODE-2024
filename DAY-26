@@ -1,0 +1,12 @@
+k = int(input("the intrinsinc characteristic value that transmogrifier adds is: "))
+n = int(input("number of minions: "))
+N = []
+N = [int(input("characteristic values: ")) for i in range(0,n)]
+
+count =0
+
+for i in range (0,n):
+    if(N[i]%7==0):
+        count = count + 1
+
+print(count)
